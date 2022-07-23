@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Cursor } from "./components";
+import { Cursor, Counter } from "./components";
 
 const App = () => {
 	const [cursorState, setCursorState] = useState({
@@ -28,6 +28,8 @@ const App = () => {
 			onMouseLeave={(event) => CheckMouseLeave(event)}
 		>
 			<Cursor cursorState={cursorState} />
+			<Counter />
+			<h1>Thanathip S.</h1>
 		</div>
 	);
 };
