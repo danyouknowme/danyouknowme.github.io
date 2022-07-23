@@ -5,3 +5,9 @@
 	border-radius: 50%;
 	position: fixed;
 }
+
+@media (max-width: 1439px) {
+	.cursor {
+		display: none !important;
+	}
+}
