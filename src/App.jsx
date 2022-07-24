@@ -31,6 +31,9 @@ const App = () => {
 					)}
 					<div className="content__container">
 						<Navbar renderContent={renderContent} />
+						<div className="content-top__container">
+							<img src="img/profile-8bit.jpg" alt="" />
+						</div>
 					</div>
 				</div>
 			)}
