@@ -1,12 +1,37 @@
+@import "../node_modules/nes.css/css/nes.css";
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	cursor: none !important;
 }
 
 .App {
+	background-color: #f5f5f5;
+}
+
+.body__container {
 	width: 100vw;
 	min-height: 100vh;
 	background-color: #f5f5f5;
+}
+
+.flashing-page__container {
+	width: 100vw;
+	min-height: 100vh;
+	background-color: #f5f5f5;
+}
+
+.anim-flash {
+	animation: flash-page 3s;
+}
+
+@keyframes flash-page {
+	0% {
+		background-color: #212529;
+	}
+	100% {
+		background-color: #f5f5f5;
+	}
 }

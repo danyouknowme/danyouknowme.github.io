@@ -1,35 +1,39 @@
-import { useState } from "react";
-import { Cursor, Counter } from "./components";
+import { useEffect, useState } from "react";
+import { Loading, Navbar } from "./components";
 
 const App = () => {
-	const [cursorState, setCursorState] = useState({
-		isShowing: true,
-		position: { x: 0, y: 0 },
-	});
+	const [loadingPage, setLoadingPage] = useState(true);
+	const [renderContent, setRenderContent] = useState(false);
 
-	const GetCursorPosition = (event) => {
-		setCursorState({
-			isShowing: true,
-			position: { x: event.clientX, y: event.clientY },
-		});
-	};
-
-	const CheckMouseLeave = (event) => {
-		setCursorState({
-			isShowing: false,
-			position: { x: event.clientX, y: event.clientY },
-		});
-	};
+	useEffect(() => {
+		if (!loadingPage) {
+			setTimeout(() => {
+				setRenderContent(true);
+			}, 1500);
+		}
+	}, [loadingPage]);
 
 	return (
-		<div
-			className="App"
-			onMouseMove={(event) => GetCursorPosition(event)}
-			onMouseLeave={(event) => CheckMouseLeave(event)}
-		>
-			<Cursor cursorState={cursorState} />
-			<Counter />
-			<h1>Thanathip S.</h1>
+		<div className="App">
+			{!renderContent && (
+				<Loading loadingPage={loadingPage} setLoadingPage={setLoadingPage} />
+			)}
+			{!loadingPage && (
+				<div className="body__container">
+					{!renderContent && (
+						<div
+							className={`${
+								!loadingPage
+									? "flashing-page__container anim-flash"
+									: "flashing-page__container"
+							}`}
+						></div>
+					)}
+					<div className="content__container">
+						<Navbar renderContent={renderContent} />
+					</div>
+				</div>
+			)}
 		</div>
 	);
 };
