@@ -8,6 +8,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	z-index: 1;
 
 	h1 {
 		margin: 0;
@@ -17,9 +18,19 @@
 		display: flex;
 		align-items: center;
 		list-style: none;
+		margin: 0;
 
 		li {
 			margin: 0 20px;
 		}
 	}
+}
+
+.navbar-bg__container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #212529;
+	width: 100vw;
+	height: 8px;
 }
