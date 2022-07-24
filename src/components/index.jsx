@@ -1,2 +1,2 @@
-export { default as Cursor } from "./cursor";
-export { default as Counter } from "./counter";
+export { default as Loading } from "./Loading";
+export { default as Navbar } from "./Navbar";

@@ -1,0 +1,41 @@
+.loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	font-family: "Press Start 2P", cursive;
+	display: flex;
+	flex-direction: column;
+
+	span {
+		margin-bottom: 14px;
+		animation: flash 1.8s infinite ease-in-out;
+		opacity: 1;
+		transition: 0.5s;
+	}
+}
+
+.hiding-progress {
+	span {
+		opacity: 0;
+		animation: none;
+	}
+	.nes-progress {
+		transition: 0.4s;
+		border: 0;
+		height: 0;
+	}
+}
+
+@keyframes flash {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
