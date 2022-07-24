@@ -12,7 +12,11 @@ const Navbar = ({ renderContent }) => {
 				<li>Experience</li>
 				<li>Project</li>
 				<li>
-					<a href="https://github.com/" target="_blank" rel="noreferrer">
+					<a
+						href="img/Thanathip_Suwannakhot.pdf"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<button type="button" className="nes-btn is-error">
 							RESUME
 						</button>
