@@ -3,7 +3,7 @@ import "./loading.scss";
 
 const Loading = ({ loadingPage, setLoadingPage }) => {
 	const [valueProgress, setValueProgress] = useState(0);
-	const valueList = [25, 30, 70, 75, 90, 100];
+	const valueList = [25, 30, 75, 90, 100];
 
 	useEffect(() => {
 		let i = 0;
