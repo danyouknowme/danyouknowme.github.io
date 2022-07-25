@@ -1,15 +1,17 @@
 import React from "react";
 import "./navbar.scss";
 
-const Navbar = ({ renderContent }) => {
+const Navbar = ({ renderContent, isOpenMenu, setIsOpenMenu }) => {
 	return (
 		<>
 			<div
 				className="navbar__container nes-container is-rounded is-primary"
 				style={{ top: `${renderContent ? "0" : "-104px"}` }}
 			>
-				{/* <h1>Thanathip S.</h1> */}
-				<div></div>
+				<h3>Thanathip S.</h3>
+				<div className="hamburger-menu__container" onClick={() => setIsOpenMenu(!isOpenMenu)}>
+					{!isOpenMenu ? <i className="nes-icon bars is-small"></i> : <i className="nes-icon times is-small"></i>}
+				</div>
 				<ul>
 					<li>Experience</li>
 					<li>Project</li>

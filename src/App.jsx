@@ -4,6 +4,7 @@ import { Loading, Navbar } from "./components";
 const App = () => {
 	const [loadingPage, setLoadingPage] = useState(true);
 	const [renderContent, setRenderContent] = useState(false);
+	const [isOpenMenu, setIsOpenMenu] = useState(false);
 
 	useEffect(() => {
 		if (!loadingPage) {
@@ -30,9 +31,9 @@ const App = () => {
 						></div>
 					)}
 					<div className="content__container">
-						<Navbar renderContent={renderContent} />
+						<Navbar renderContent={renderContent} isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
 						<div className="content-top__container">
-							<img src="img/profile-8bit.jpg" alt="" />
+							{/* <img src="img/profile-8bit.jpg" alt="" /> */}
 						</div>
 					</div>
 				</div>
