@@ -39,3 +39,9 @@
 		opacity: 0;
 	}
 }
+
+@media (max-width: 520px) {
+	.loading {
+		width: 350px;
+	}
+}
