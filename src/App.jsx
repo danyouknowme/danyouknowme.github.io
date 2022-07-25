@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Loading, Navbar } from "./components";
+import { Loading, Navbar, ScrollDown } from "./components";
 
 const App = () => {
 	const [loadingPage, setLoadingPage] = useState(true);
@@ -32,6 +32,7 @@ const App = () => {
 					)}
 					<div className="content__container">
 						<Navbar renderContent={renderContent} isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
+						<ScrollDown renderContent={renderContent} />
 						<div className="content-top__container">
 							{/* <img src="img/profile-8bit.jpg" alt="" /> */}
 						</div>
