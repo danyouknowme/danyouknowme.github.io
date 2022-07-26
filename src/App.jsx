@@ -5,6 +5,12 @@ const App = () => {
 	const [loadingPage, setLoadingPage] = useState(true);
 	const [renderContent, setRenderContent] = useState(false);
 	const [isOpenMenu, setIsOpenMenu] = useState(false);
+	const [isScrolled, setIsScrolled] = useState(false);
+
+	window.onscroll = () => {
+        setIsScrolled(window.pageYOffset === 0 ? false : true);
+        return () => (window.onscroll === null);
+    }
 
 	useEffect(() => {
 		if (!loadingPage) {
@@ -32,7 +38,7 @@ const App = () => {
 					)}
 					<div className="content__container">
 						<Navbar renderContent={renderContent} isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
-						<ScrollDown renderContent={renderContent} />
+						<ScrollDown renderContent={renderContent} isScrolled={isScrolled} />
 						<div className="content-top__container">
 							{/* <img src="img/profile-8bit.jpg" alt="" /> */}
 						</div>
