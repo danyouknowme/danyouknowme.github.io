@@ -60,7 +60,7 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: 678px) {
 	.home__section {
 		.home-top__container {
 			.profile-image__container {
@@ -75,11 +75,21 @@
 
 			.nes-container {
 				font-size: 12px;
-				width: 330px;
+				width: 420px;
 
 				h2 {
 					font-size: 13px;
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	.home__section {
+		.home-top__container {
+			.nes-container {
+				width: 330px;
 			}
 		}
 	}
