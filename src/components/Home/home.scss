@@ -28,7 +28,7 @@
 
 			img.profile {
 				width: 83%;
-				height: 288px;
+				height: 76%;
 				position: absolute;
 				top: 46px;
 				left: 8.3%;
@@ -65,11 +65,17 @@
 		.home-top__container {
 			.profile-image__container {
 				margin-bottom: 20px;
-				width: 350px;
+				width: 270px;
+				height: 266px;
+
+				img.profile {
+					top: 32px;
+				}
 			}
 
 			.nes-container {
 				font-size: 12px;
+				width: 330px;
 
 				h2 {
 					font-size: 13px;
