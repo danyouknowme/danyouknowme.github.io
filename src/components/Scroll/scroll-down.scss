@@ -35,3 +35,10 @@
         top: 50%;
     }
 }
+
+@media (max-width: 768px) {
+    .scroll-down__container {
+        left: 20px;
+        transform: none;
+    }
+}

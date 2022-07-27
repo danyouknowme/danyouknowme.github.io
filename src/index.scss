@@ -48,3 +48,27 @@
 		background-color: #f5f5f5;
 	}
 }
+
+@media (max-width: 768px) {
+	.App {
+		.body__container {
+			.content__container {
+				.content-top__container {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.App {
+		.body__container {
+			.content__container {
+				.content-top__container {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}

@@ -27,12 +27,53 @@
 			}
 
 			img.profile {
-				position: absolute;
-				top: 44px;
-				left: 31px;
-				width: 425px;
+				width: 83%;
 				height: 288px;
+				position: absolute;
+				top: 46px;
+				left: 8.3%;
 				object-fit: cover;
+			}
+		}
+		.nes-container {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.home__section {
+		.home-top__container {
+			flex-direction: column;
+			.profile-image__container {
+				margin-right: 0;
+				margin-bottom: 40px;
+			}
+			.nes-balloon {
+				display: none;
+			}
+	
+			.nes-container {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.home__section {
+		.home-top__container {
+			.profile-image__container {
+				margin-bottom: 20px;
+				width: 350px;
+			}
+
+			.nes-container {
+				font-size: 12px;
+
+				h2 {
+					font-size: 13px;
+				}
 			}
 		}
 	}

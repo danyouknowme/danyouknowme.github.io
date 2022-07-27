@@ -13,6 +13,10 @@ const Home = () => {
 					<h2>Thanathip Suwannakhot</h2>
 					<p>Software Engineering Student</p>
 				</div>
+				<div className="nes-container is-rounded">
+					<h2>Thanathip Suwannakhot</h2>
+					<p>Software Engineering Student</p>
+				</div>
 			</div>
 		</div>
 	);
