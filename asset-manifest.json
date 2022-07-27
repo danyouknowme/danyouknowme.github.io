@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.e3c94913.css",
+    "main.css": "./static/css/main.555ecf0f.css",
     "main.js": "./static/js/main.c173d1f1.js",
     "static/media/nes-icons.svg": "./static/media/nes-icons.1c2aa4062554c7164b26.svg",
     "static/media/nes-icons.eot": "./static/media/nes-icons.3590acfccb33b4692eb8.eot",
@@ -8,11 +8,11 @@
     "static/media/nes-icons.woff": "./static/media/nes-icons.4dd4b527656fbddfa8f2.woff",
     "static/media/nes-icons.woff2": "./static/media/nes-icons.5e3ab894539d5ed2d154.woff2",
     "index.html": "./index.html",
-    "main.e3c94913.css.map": "./static/css/main.e3c94913.css.map",
+    "main.555ecf0f.css.map": "./static/css/main.555ecf0f.css.map",
     "main.c173d1f1.js.map": "./static/js/main.c173d1f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3c94913.css",
+    "static/css/main.555ecf0f.css",
     "static/js/main.c173d1f1.js"
   ]
 }
