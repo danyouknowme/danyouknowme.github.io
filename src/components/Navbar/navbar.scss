@@ -2,7 +2,7 @@
 	position: absolute !important;
 	background-color: #8fbc8f;
 	top: 0;
-	width: calc(100vw - 8px);
+	width: calc(100vw - 24px);
 	transition: 0.5s;
 	color: #f5f5f5;
 	display: flex;
@@ -16,7 +16,8 @@
 	}
 
 	.hamburger-menu__container {
-		.bars, .times {
+		.bars,
+		.times {
 			display: none;
 			transform: scale(2.2) !important;
 			color: #212529;
@@ -58,18 +59,18 @@
 				margin: 0 10px;
 			}
 		}
-	}	
+	}
 }
 
 @media (max-width: 600px) {
 	.navbar__container {
-
 		.hamburger-menu__container {
-			.bars, .times {
+			.bars,
+			.times {
 				display: inline-block;
 			}
 		}
-			
+
 		ul {
 			display: none;
 		}
