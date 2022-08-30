@@ -14,25 +14,16 @@
 		justify-content: center;
 
 		.profile-image__container {
-			width: 500px;
-			height: 378px;
+			width: 450px;
+			height: 450px;
 			position: relative;
 			display: flex;
 			margin-right: 100px;
 
-			img.frame {
-				position: absolute;
+			img.profile {
 				width: 100%;
 				height: 100%;
-			}
-
-			img.profile {
-				width: 83%;
-				height: 76%;
-				position: absolute;
-				top: 46px;
-				left: 8.3%;
-				object-fit: cover;
+				object-fit: contain;
 			}
 		}
 		.nes-container {
