@@ -3,7 +3,7 @@ import "./experience.scss";
 
 const Experience = () => {
   return (
-    <div className="experience__section">
+    <div className="experience__section" id="experience">
       <span className="experience__title">Experience</span>
       <div className="experience__list" data-aos="fade-up">
         <div className="experience__logo">

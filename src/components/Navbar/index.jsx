@@ -10,7 +10,9 @@ const Navbar = ({ renderContent, isOpenMenu, setIsOpenMenu }) => {
           {!isOpenMenu ? <i className="nes-icon bars is-small"></i> : <i className="nes-icon times is-small"></i>}
         </div>
         <ul>
-          <li>Experience</li>
+          <li className="nes-pointer">
+            <a href="#experience">Experience</a>
+          </li>
           <li>Project</li>
           <li>
             <a href="img/Thanathip_Suwannakhot.pdf" target="_blank" rel="noreferrer">

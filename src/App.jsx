@@ -31,7 +31,7 @@ const App = () => {
           {!renderContent && <div className={`${!loadingPage ? "flashing-page__container anim-flash" : "flashing-page__container"}`}></div>}
           <div className="content__container">
             <Navbar renderContent={renderContent} isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
-            <DropdownMenu isOpenMenu={isOpenMenu} />
+            <DropdownMenu isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
             <ScrollDown renderContent={renderContent} isScrolled={isScrolled} />
             <div className="content-top__container">
               <Home />

@@ -36,6 +36,14 @@
 
     li {
       margin: 0 20px;
+
+      a {
+        all: unset;
+      }
+
+      &:hover {
+        color: #444444;
+      }
     }
   }
 }
