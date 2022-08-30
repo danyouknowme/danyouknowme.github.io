@@ -3,72 +3,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 .App {
-	background-color: #f5f5f5;
+  background-color: #f5f5f5;
 
-	.body__container {
-		min-height: 100vh;
-		background-color: #f5f5f5;
+  .body__container {
+    min-height: 100vh;
+    background-color: #f5f5f5;
 
-		.flashing-page__container {
-			min-height: 100vh;
-			background-color: #f5f5f5;
-		}
+    .flashing-page__container {
+      min-height: 100vh;
+      background-color: #f5f5f5;
+    }
 
-		.anim-flash {
-			animation: flash-page 8s;
-		}
+    .anim-flash {
+      animation: flash-page 8s;
+    }
 
-		.content__container {
-			width: 100%;
-			background-color: red;
+    .content__container {
+      width: 100%;
+      background-color: #f5f5f5;
 
-			.content-top__container {
-				margin-top: 100px;
-				width: 100%;
-			}
-		}
-	}
+      .content-top__container {
+        margin-top: 100px;
+        width: 100%;
+      }
+    }
+  }
 }
 
 @keyframes flash-page {
-	0% {
-		background-color: #212529;
-	}
-	100% {
-		background-color: #f5f5f5;
-	}
+  0% {
+    background-color: #212529;
+  }
+  100% {
+    background-color: #f5f5f5;
+  }
 }
 
 @media (max-width: 768px) {
-	.App {
-		.body__container {
-			.content__container {
-				.content-top__container {
-					margin-top: 40px;
-				}
-			}
-		}
-	}
+  .App {
+    .body__container {
+      .content__container {
+        .content-top__container {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 425px) {
-	.App {
-		.body__container {
-			.content__container {
-				.content-top__container {
-					margin-top: 0;
-				}
-			}
-		}
-	}
+  .App {
+    .body__container {
+      .content__container {
+        .content-top__container {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }
