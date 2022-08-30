@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
 import { DropdownMenu, Loading, Navbar, ScrollDown, Home, Experience } from "./components";
+import AOS from "aos";
 
 const App = () => {
   const [loadingPage, setLoadingPage] = useState(true);
   const [renderContent, setRenderContent] = useState(false);
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  let scrollRef = 0;
 
   window.onscroll = () => {
     setIsScrolled(window.pageYOffset === 0 ? false : true);
+    scrollRef <= 10 ? scrollRef++ : AOS.refresh();
     return () => window.onscroll === null;
   };
 

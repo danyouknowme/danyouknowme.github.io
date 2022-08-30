@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <div className="experience__section">
       <span className="experience__title">Experience</span>
-      <div className="experience__list">
+      <div className="experience__list" data-aos="fade-up">
         <div className="experience__logo">
           <img src="https://www.eternityx.com/wp-content/uploads/2021/09/Agoda-Logo.png" alt="agoda" />
         </div>
@@ -23,14 +23,14 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      <div className="experience__list">
+      <div className="experience__list" data-aos="fade-up">
         <div className="experience__logo">
           <img src="/img/afu-logo.png" alt="afu" />
         </div>
         <div className="experience__description">
           <span className="experience__description-title">Frontend Developer</span>
           <div className="experience__description-middle">
-            <span>Awayfromus</span>
+            <span>Awayfromus • Part Time</span>
             <span>April 2022 - Present</span>
           </div>
           <div className="experience__tech-stack__list">
