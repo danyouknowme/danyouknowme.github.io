@@ -27,15 +27,15 @@
     list-style: none;
     margin: 0;
 
-    li {
-      margin: 0 20px;
+    a {
+      all: unset;
 
-      a {
-        all: unset;
-      }
+      li {
+        margin: 0 20px;
 
-      &:hover {
-        color: #444444;
+        &:hover {
+          color: #444444;
+        }
       }
     }
   }

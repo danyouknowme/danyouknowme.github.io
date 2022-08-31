@@ -7,15 +7,19 @@ const DropdownMenu = ({ isOpenMenu, setIsOpenMenu }) => {
       <div className="nes-container is-rounded">
         <span>
           <a href="#experience" onClick={() => setIsOpenMenu(false)}>
-            Experiences
+            Experience
           </a>
         </span>
         <span>
           <a href="#project" onClick={() => setIsOpenMenu(false)}>
-            Projects
+            Project
           </a>
         </span>
-        <span>Contact</span>
+        <span>
+          <a href="#contact" onClick={() => setIsOpenMenu(false)}>
+            Contact
+          </a>
+        </span>
       </div>
     </div>
   );

@@ -11,12 +11,12 @@ const Navbar = ({ renderContent, isOpenMenu, setIsOpenMenu }) => {
           {!isOpenMenu ? <CgMenuRight size="24" /> : <CgClose size="24" />}
         </div>
         <ul>
-          <li className="nes-pointer">
-            <a href="#experience">Experience</a>
-          </li>
-          <li className="nes-pointer">
-            <a href="#project">Project</a>
-          </li>
+          <a href="#experience">
+            <li className="nes-pointer">Experience</li>
+          </a>
+          <a href="#project">
+            <li className="nes-pointer">Project</li>
+          </a>
           <li>
             <a href="img/Thanathip_Suwannakhot.pdf" target="_blank" rel="noreferrer">
               <button type="button" className="nes-btn is-primary">
