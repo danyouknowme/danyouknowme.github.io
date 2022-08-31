@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { DropdownMenu, Loading, Navbar, ScrollDown, Home, Experience } from "./components";
+import { DropdownMenu, Loading, Navbar, ScrollDown, Home, Experience, Project } from "./components";
 import AOS from "aos";
 
 const App = () => {
@@ -36,6 +36,7 @@ const App = () => {
             <div className="content-top__container">
               <Home />
               <Experience />
+              <Project />
             </div>
           </div>
         </div>

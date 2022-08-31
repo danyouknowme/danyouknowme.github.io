@@ -13,6 +13,7 @@ AOS.init({
   duration: 1500,
   once: false,
   mirror: false,
+  disable: "mobile",
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

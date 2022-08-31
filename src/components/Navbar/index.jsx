@@ -13,7 +13,9 @@ const Navbar = ({ renderContent, isOpenMenu, setIsOpenMenu }) => {
           <li className="nes-pointer">
             <a href="#experience">Experience</a>
           </li>
-          <li>Project</li>
+          <li className="nes-pointer">
+            <a href="#project">Project</a>
+          </li>
           <li>
             <a href="img/Thanathip_Suwannakhot.pdf" target="_blank" rel="noreferrer">
               <button type="button" className="nes-btn is-error">

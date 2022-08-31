@@ -10,7 +10,11 @@ const DropdownMenu = ({ isOpenMenu, setIsOpenMenu }) => {
             Experiences
           </a>
         </span>
-        <span>Projects</span>
+        <span>
+          <a href="#project" onClick={() => setIsOpenMenu(false)}>
+            Projects
+          </a>
+        </span>
         <span>Contact</span>
       </div>
     </div>
