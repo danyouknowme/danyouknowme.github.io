@@ -4,7 +4,9 @@ import "./experience.scss";
 const Experience = () => {
   return (
     <div className="experience__section" id="experience">
-      <span className="experience__title">Experience</span>
+      <div className="experience__title">
+        <span>Experience</span>
+      </div>
       <div className="experience__list" data-aos="fade-up">
         <div className="experience__logo">
           <img src="https://www.eternityx.com/wp-content/uploads/2021/09/Agoda-Logo.png" alt="agoda" />
