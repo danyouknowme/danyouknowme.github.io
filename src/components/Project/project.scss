@@ -1,0 +1,109 @@
+.project__section {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100vh;
+  padding: 8rem 0 4rem;
+
+  .project__title {
+    display: flex;
+    justify-content: center;
+
+    span {
+      font-size: 1.5rem;
+    }
+  }
+
+  .project__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 2rem 0;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .nes-container {
+      height: max-content;
+    }
+
+    .project-desktop__list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    img {
+      border-radius: 5px;
+    }
+
+    .project__tech-stack__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 0.5rem;
+
+      div {
+        background-color: red;
+        font-size: 0.5rem;
+        padding: 4px 8px;
+        border-radius: 4px;
+      }
+    }
+
+    .project-gitub__block {
+      margin-top: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      span {
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project__section {
+    max-width: 600px;
+    padding: 4rem 0;
+
+    .project__title {
+      justify-content: flex-end;
+
+      span {
+        font-size: 2.5rem;
+      }
+    }
+
+    .project__list {
+      flex-direction: row;
+      justify-content: center;
+
+      .experience__logo {
+        margin-right: 1rem;
+        height: unset;
+
+        img {
+          width: 180px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .project__section {
+    max-width: 900px;
+
+    .project__title {
+      margin-bottom: 3rem;
+    }
+  }
+}

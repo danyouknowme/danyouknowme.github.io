@@ -5,10 +5,15 @@
   margin: 0 auto;
   text-align: center;
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 8rem 0 4rem;
 
   .experience__title {
-    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+
+    span {
+      font-size: 1.5rem;
+    }
   }
 
   .experience__list {
@@ -71,12 +76,22 @@
 
 @media screen and (min-width: 768px) {
   .experience__section {
+    max-width: 600px;
+    padding: 4rem 0;
+
+    .experience__title {
+      justify-content: flex-start;
+
+      span {
+        font-size: 2.5rem;
+      }
+    }
+
     .experience__list {
       flex-direction: row;
       justify-content: center;
 
       .experience__logo {
-        width: 400px;
         margin-right: 1rem;
         height: unset;
 
@@ -84,6 +99,16 @@
           width: 180px;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .experience__section {
+    max-width: 900px;
+
+    .experience__title {
+      margin-bottom: 3rem;
     }
   }
 }

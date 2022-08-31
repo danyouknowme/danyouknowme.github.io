@@ -4,7 +4,9 @@ import "./experience.scss";
 const Experience = () => {
   return (
     <div className="experience__section" id="experience">
-      <span className="experience__title">Experience</span>
+      <div className="experience__title">
+        <span>Experience</span>
+      </div>
       <div className="experience__list" data-aos="fade-up">
         <div className="experience__logo">
           <img src="https://www.eternityx.com/wp-content/uploads/2021/09/Agoda-Logo.png" alt="agoda" />
@@ -16,10 +18,10 @@ const Experience = () => {
             <span>May 2022 - July 2022</span>
           </div>
           <div className="experience__tech-stack__list">
-            <div style={{ backgroundColor: "#FFFF00" }}>Hadoop</div>
-            <div style={{ backgroundColor: "#509EE2" }}>Metabase</div>
             <div style={{ backgroundColor: "#DB7432" }}>SQL</div>
             <div style={{ backgroundColor: "#5C2C91", color: "#f5f5f5" }}>.NET</div>
+            <div style={{ backgroundColor: "#FFFF00" }}>Hadoop</div>
+            <div style={{ backgroundColor: "#509EE2" }}>Metabase</div>
           </div>
         </div>
       </div>

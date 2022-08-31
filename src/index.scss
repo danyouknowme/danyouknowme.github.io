@@ -1,5 +1,4 @@
 @import "../node_modules/nes.css/css/nes.css";
-@import "../node_modules/nes.icons/css/nes-icons.css";
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 * {
@@ -14,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #f5f5f5;
 }
 
 .App {

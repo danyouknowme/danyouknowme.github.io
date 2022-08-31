@@ -1,5 +1,6 @@
 import React from "react";
 import "./navbar.scss";
+import { CgMenuRight, CgClose } from "react-icons/cg";
 
 const Navbar = ({ renderContent, isOpenMenu, setIsOpenMenu }) => {
   return (
@@ -7,16 +8,18 @@ const Navbar = ({ renderContent, isOpenMenu, setIsOpenMenu }) => {
       <div className="navbar__container nes-container is-rounded is-primary" style={{ top: `${renderContent ? "0" : "-104px"}` }}>
         <h3>Thanathip S.</h3>
         <div className="hamburger-menu__container" onClick={() => setIsOpenMenu(!isOpenMenu)}>
-          {!isOpenMenu ? <i className="nes-icon bars is-small"></i> : <i className="nes-icon times is-small"></i>}
+          {!isOpenMenu ? <CgMenuRight size="24" /> : <CgClose size="24" />}
         </div>
         <ul>
-          <li className="nes-pointer">
-            <a href="#experience">Experience</a>
-          </li>
-          <li>Project</li>
+          <a href="#experience">
+            <li className="nes-pointer">Experience</li>
+          </a>
+          <a href="#project">
+            <li className="nes-pointer">Project</li>
+          </a>
           <li>
             <a href="img/Thanathip_Suwannakhot.pdf" target="_blank" rel="noreferrer">
-              <button type="button" className="nes-btn is-error">
+              <button type="button" className="nes-btn is-primary">
                 RESUME
               </button>
             </a>

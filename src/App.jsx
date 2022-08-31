@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { DropdownMenu, Loading, Navbar, ScrollDown, Home, Experience } from "./components";
+import { DropdownMenu, Loading, Navbar, ScrollDown, Home, Experience, Project, ScrollUp, Contact } from "./components";
 import AOS from "aos";
 
 const App = () => {
@@ -7,10 +7,12 @@ const App = () => {
   const [renderContent, setRenderContent] = useState(false);
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrollUpActive, setIsScrollUpActive] = useState(false);
   let scrollRef = 0;
 
   window.onscroll = () => {
     setIsScrolled(window.pageYOffset === 0 ? false : true);
+    setIsScrollUpActive(window.pageYOffset > 250 ? true : false);
     scrollRef <= 10 ? scrollRef++ : AOS.refresh();
     return () => window.onscroll === null;
   };
@@ -33,9 +35,12 @@ const App = () => {
             <Navbar renderContent={renderContent} isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
             <DropdownMenu isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
             <ScrollDown renderContent={renderContent} isScrolled={isScrolled} />
+            <ScrollUp isActive={isScrollUpActive} />
             <div className="content-top__container">
               <Home />
               <Experience />
+              <Project />
+              <Contact />
             </div>
           </div>
         </div>
