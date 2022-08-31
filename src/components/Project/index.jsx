@@ -71,6 +71,7 @@ const Project = () => {
                 <div style={{ backgroundColor: "#8CC401", color: "#ffffff" }}>NodeJS</div>
                 <div style={{ backgroundColor: "#F7E017", color: "#363636" }}>ExpressJS</div>
                 <div style={{ backgroundColor: "#4DB33D", color: "#ffffff" }}>MongoDB</div>
+                <div style={{ backgroundColor: "#FFCB2B", color: "#363636" }}>Firebase</div>
               </div>
             </div>
           </a>
