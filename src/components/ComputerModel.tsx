@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import type { Mesh } from 'three'
 
-export default function Model() {
+export default function ComputerModel() {
   const gltf = useLoader(GLTFLoader, '/model/scene.gltf')
   const ref = useRef<Mesh>(null)
 
@@ -16,7 +16,7 @@ export default function Model() {
   })
 
   useEffect(() => {
-    gltf.scene.scale.set(1.85, 1.85, 1.85)
+    gltf.scene.scale.set(1.5, 1.5, 1.5)
     gltf.scene.position.set(0, -1.85, 0)
   }, [gltf])
 
