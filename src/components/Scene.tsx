@@ -4,7 +4,7 @@ import { ComputerModel, CameraController } from '../components'
 
 export default function Scene() {
   return (
-    <Canvas>
+    <Canvas style={{ width: '768px', height: '350px' }}>
       <Suspense fallback={null}>
         <CameraController />
         <ambientLight />
