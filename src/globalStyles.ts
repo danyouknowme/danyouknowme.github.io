@@ -12,11 +12,30 @@ export const GlobalStyle = createGlobalStyle`
     background-color: rgb(32, 32, 35);
   }
 
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 `;
 
 export const MainSection = styled.main`
   display: block;
   margin: 0 auto;
   max-width: 768px;
-  height: 200vh;
+`
+
+export const Article = styled.article`
+  position: relative;
+  opacity: 1;
+  transform: none;
+`
+
+export const ContentSection = styled.div`
+  width: 100%;
+  max-width: 60ch;
+  margin: 0 auto;
 `
