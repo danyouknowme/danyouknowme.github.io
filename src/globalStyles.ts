@@ -8,7 +8,16 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #282c34;
+    background-color: rgb(32, 32, 35);
+  }
+
+  main {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  canvas {
+    height: 350px;
   }
 `;
 
