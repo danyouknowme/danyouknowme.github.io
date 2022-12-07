@@ -11,12 +11,13 @@ export default function Model() {
     if (!ref.current) return
 
     const a = clock.getElapsedTime()
-    ref.current.rotation.y = -a / 1.8
+    ref.current.rotation.x = 0.5
+    ref.current.rotation.y = -a / 2.2
   })
 
   useEffect(() => {
-    gltf.scene.scale.set(2, 2, 2)
-    gltf.scene.position.set(0, -2.5, 0)
+    gltf.scene.scale.set(1.85, 1.85, 1.85)
+    gltf.scene.position.set(0, -1.85, 0)
   }, [gltf])
 
   return (
