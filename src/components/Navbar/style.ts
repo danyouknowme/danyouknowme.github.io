@@ -15,18 +15,26 @@ export const NavbarWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
+
+  @media (max-width: 767px) {
+    padding: 16px;
+  }
 `
 
 export const NavbarTitle = styled.div`
   font-weight: 700;
   font-size: 20px;
+  display: flex;
+  align-items: center;
 `
 
-export const MenuList = styled.ul`
+export const MenuListContainer = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
   margin-left: 20px;
+  font-size: 16px;
+  font-weight: 300;
 
   li {
     margin: 0 12px;
@@ -61,11 +69,14 @@ export const MenuList = styled.ul`
         transform-origin: bottom left;
       }
     }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 `
 
 export const ThemeButtonContainer = styled.div`
-  width: 100%;
   position: relative;
   display: flex;
   justify-content: flex-end;
