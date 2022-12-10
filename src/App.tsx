@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components'
-import { Navbar, Scene, Quote } from './components'
+import { Navbar, Scene, Quote, Profile } from './components'
 import { lightTheme, darkTheme } from './styles/themes'
 import {
   Article,
@@ -24,6 +24,7 @@ export default function App() {
           <Article>
             <ContentSection>
               <Quote />
+              <Profile />
             </ContentSection>
           </Article>
         </MainSection>
