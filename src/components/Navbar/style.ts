@@ -1,11 +1,10 @@
-import styled from 'styled-components'
+import styled, { DefaultTheme } from 'styled-components'
 
-export const NavbarContainer = styled.nav<{ isScroll: boolean }>`
+export const NavbarContainer = styled.nav<{ theme: DefaultTheme, isScroll: boolean }>`
   position: fixed;
-  background: rgba(32, 32, 35, 0.5);
+  background: ${({ theme }) => theme.navbarBackground};
   z-index: 2;
   backdrop-filter: blur(${props => props.isScroll ? '10px' : '0px'});
-  color: white;
   width: 100%;
 `
 

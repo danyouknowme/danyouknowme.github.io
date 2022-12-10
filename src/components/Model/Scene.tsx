@@ -1,6 +1,7 @@
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { ComputerModel, CameraController } from '../components'
+import CameraController from './CameraController'
+import ComputerModel from './ComputerModel'
 
 export default function Scene() {
   return (
