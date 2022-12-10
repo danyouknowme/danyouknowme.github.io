@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react'
 
 export function useThemeMode() {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('light')
 
   function setMode(mode: string) {
-    window.localStorage.setItem('theme', mode)
     setTheme(mode)
   }
 
@@ -13,9 +12,8 @@ export function useThemeMode() {
   }
 
   useEffect(function () {
-    const localTheme = window.localStorage.getItem('theme')
-    localTheme && setTheme(localTheme)
-  }, [])
+    setTheme(theme)
+  }, [theme])
 
   return { theme, themeToggler }
 }
