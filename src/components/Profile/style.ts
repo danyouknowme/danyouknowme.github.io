@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const ProfileContainer = styled.div`
@@ -12,7 +13,7 @@ export const ProfileContainer = styled.div`
   }
 `
 
-export const ProfileTextContainer = styled.div`
+export const ProfileTextContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
 
@@ -31,6 +32,13 @@ export const ProfileTextContainer = styled.div`
 
   @media (max-width: 424px) {
     margin-top: 0.8rem;
+    align-items: center;
+
+    h1 {
+      span {
+        font-size: 2rem;
+      }
+    }
   }
 `
 

@@ -44,19 +44,21 @@ const heroSubTextAnimation = {
 export default function Profile() {
   return (
     <ProfileContainer>
-      <ProfileTextContainer>
-        <motion.div variants={heroAnimation} initial='hidden' animate='show'>
-          <motion.div variants={heroTextContainer}>
-            <motion.h1 variants={heroTextAnimation} style={{ fontFamily: '' }}>
-              <AnimatedText text='Thanathip' />{' '}
-              <AnimatedText text='Suwannakhot' reversed />
-            </motion.h1>
-            <motion.p variants={heroSubTextAnimation}>
-              Software Engineering Student
-            </motion.p>
-          </motion.div>
-        </motion.div>
-      </ProfileTextContainer>
+      <motion.div variants={heroAnimation} initial='hidden' animate='show'>
+        <ProfileTextContainer
+          variants={heroTextContainer}
+          style={{ display: 'flex', flexDirection: 'column' }}
+          className=''
+        >
+          <motion.h1 variants={heroTextAnimation} style={{ fontFamily: '' }}>
+            <AnimatedText text='Thanathip' />{' '}
+            <AnimatedText text='Suwannakhot' reversed />
+          </motion.h1>
+          <motion.p variants={heroSubTextAnimation}>
+            Software Engineering Student
+          </motion.p>
+        </ProfileTextContainer>
+      </motion.div>
       <ProfileImageContainer>
         <img
           src='https://avatars.githubusercontent.com/u/78087668?v=4'
