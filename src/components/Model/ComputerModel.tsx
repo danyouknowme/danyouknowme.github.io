@@ -12,7 +12,7 @@ export default function ComputerModel() {
 
     const a = clock.getElapsedTime()
     ref.current.rotation.x = 0.5
-    ref.current.rotation.y = -a / 2.2
+    ref.current.rotation.y = -a / 4
   })
 
   useEffect(() => {
