@@ -18,7 +18,7 @@ export default function App() {
     <ThemeContext>
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
-        <Navbar themeToggler={themeToggler} />
+        <Navbar theme={theme} themeToggler={themeToggler} />
         <MainSection>
           <Scene />
           <Article>

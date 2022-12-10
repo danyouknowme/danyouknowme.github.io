@@ -1,12 +1,19 @@
-import { MenuList, NavbarContainer, NavbarWrapper, NavbarTitle } from './style'
+import {
+  MenuList,
+  NavbarContainer,
+  NavbarWrapper,
+  NavbarTitle,
+  ThemeButtonContainer,
+} from './style'
 import { FaGithub } from 'react-icons/fa'
 import ThemeTogglerButton from '../ThemeTogglerButton'
 
 interface NavbarProps {
+  theme: string
   themeToggler: () => void
 }
 
-export default function Navbar({ themeToggler }: NavbarProps) {
+export default function Navbar({ theme, themeToggler }: NavbarProps) {
   return (
     <NavbarContainer isScroll={true}>
       <NavbarWrapper>
@@ -35,9 +42,9 @@ export default function Navbar({ themeToggler }: NavbarProps) {
             </a>
           </li>
         </MenuList>
-        <div>
-          <ThemeTogglerButton themeToggler={themeToggler} />
-        </div>
+        <ThemeButtonContainer>
+          <ThemeTogglerButton theme={theme} themeToggler={themeToggler} />
+        </ThemeButtonContainer>
       </NavbarWrapper>
     </NavbarContainer>
   )
