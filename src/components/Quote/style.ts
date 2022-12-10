@@ -5,6 +5,6 @@ export const QuoteContainer = styled.div<{ theme: DefaultTheme }>`
     padding: 14px;
     text-align: center;
     border-radius: 12px;
-    margin: 0 44px;
+    margin: 0;
     font-weight: 300;
 `
