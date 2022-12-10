@@ -9,8 +9,8 @@ export const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
   }
 
   body {
-    background-color: ${({ theme }) => theme.background};
-    color: ${({ theme }) => theme.text};
+    background-color: ${({ theme }) => theme.background} !important;
+    color: ${({ theme }) => theme.text} !important;
     transition: all 0.15s linear;
   }
 
