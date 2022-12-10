@@ -1,6 +1,6 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle, DefaultTheme } from 'styled-components'
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
   * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: rgb(32, 32, 35);
+    background-color: ${({ theme }) => theme.background} !important;
+    color: ${({ theme }) => theme.text} !important;
+    transition: all 0.15s linear;
   }
 
   body::-webkit-scrollbar {
