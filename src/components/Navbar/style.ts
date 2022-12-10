@@ -25,6 +25,8 @@ export const NavbarTitle = styled.div`
 export const MenuList = styled.ul`
   list-style: none;
   display: flex;
+  align-items: center;
+  margin-left: 20px;
 
   li {
     margin: 0 12px;
@@ -60,4 +62,11 @@ export const MenuList = styled.ul`
       }
     }
   }
+`
+
+export const ThemeButtonContainer = styled.div`
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
 `
