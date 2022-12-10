@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled, { DefaultTheme } from 'styled-components'
 
-export const QuoteContainer = styled.div`
-    background-color: rgba(255, 255, 255, 0.08);
+export const QuoteContainer = styled.div<{ theme: DefaultTheme }>`
+    background-color: ${({ theme }) => theme.quoteBackground};
     padding: 14px;
     text-align: center;
-    color: white;
     border-radius: 12px;
     margin: 0 44px;
+    font-weight: 300;
 `

@@ -1,11 +1,10 @@
-import styled from 'styled-components'
+import styled, { DefaultTheme } from 'styled-components'
 
-export const NavbarContainer = styled.nav<{ isScroll: boolean }>`
+export const NavbarContainer = styled.nav<{ theme: DefaultTheme, isScroll: boolean }>`
   position: fixed;
-  background: rgba(32, 32, 35, 0.5);
+  background: ${({ theme }) => theme.navbarBackground};
   z-index: 2;
   backdrop-filter: blur(${props => props.isScroll ? '10px' : '0px'});
-  color: white;
   width: 100%;
 `
 
@@ -16,16 +15,26 @@ export const NavbarWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
+
+  @media (max-width: 767px) {
+    padding: 16px;
+  }
 `
 
 export const NavbarTitle = styled.div`
   font-weight: 700;
   font-size: 20px;
+  display: flex;
+  align-items: center;
 `
 
-export const MenuList = styled.ul`
+export const MenuListContainer = styled.ul`
   list-style: none;
   display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 300;
 
   li {
     margin: 0 12px;
@@ -47,7 +56,7 @@ export const MenuList = styled.ul`
           height: 1px;
           bottom: 0;
           left: 0;
-          background-color: #f5f5f5;
+          background-color: ${({ theme }) => theme.text};
           transform-origin: bottom right;
           transition: transform 0.25s ease-out;
         }
@@ -60,5 +69,15 @@ export const MenuList = styled.ul`
         transform-origin: bottom left;
       }
     }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
+`
+
+export const ThemeButtonContainer = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
 `
