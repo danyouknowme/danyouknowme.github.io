@@ -16,7 +16,7 @@ export default function ComputerModel() {
   })
 
   useEffect(() => {
-    gltf.scene.scale.set(1.5, 1.5, 1.5)
+    gltf.scene.scale.set(1.8, 1.8, 1.8)
     gltf.scene.position.set(0, -1.85, 0)
   }, [gltf])
 
