@@ -46,7 +46,7 @@ export const MenuList = styled.ul`
           height: 1px;
           bottom: 0;
           left: 0;
-          background-color: #f5f5f5;
+          background-color: ${({ theme }) => theme.text};
           transform-origin: bottom right;
           transition: transform 0.25s ease-out;
         }
