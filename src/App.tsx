@@ -9,25 +9,37 @@ import {
 } from './styles/global'
 import { useThemeMode } from './hooks/useThemeMode'
 import { ThemeContext } from './contexts/ThemeContext'
+import { Fragment, useEffect, useState } from 'react'
+import LoadingScreen from './screens/Loading/Loading'
 
 export default function App() {
   const { theme, themeToggler } = useThemeMode()
   const themeMode = theme === 'light' ? lightTheme : darkTheme
+  const [isLoading, setIsLoading] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(true)
+    }, 5000)
+  })
 
   return (
     <ThemeContext>
       <ThemeProvider theme={themeMode}>
         <GlobalStyle />
-        <Navbar theme={theme} themeToggler={themeToggler} />
-        <MainSection>
-          <Scene />
-          <Article>
-            <ContentSection>
-              <Quote />
-              <Profile />
-            </ContentSection>
-          </Article>
-        </MainSection>
+        <LoadingScreen isLoading={isLoading} />
+        <Fragment>
+          <Navbar theme={theme} themeToggler={themeToggler} />
+          <MainSection>
+            <Scene />
+            <Article>
+              <ContentSection>
+                <Quote />
+                <Profile isLoading={isLoading} />
+              </ContentSection>
+            </Article>
+          </MainSection>
+        </Fragment>
       </ThemeProvider>
     </ThemeContext>
   )

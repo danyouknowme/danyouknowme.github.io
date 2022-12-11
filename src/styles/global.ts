@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
     background-color: ${({ theme }) => theme.background} !important;
     color: ${({ theme }) => theme.text} !important;
     transition: all 0.15s linear;
+    min-height: 100vh !important;
   }
 
   body::-webkit-scrollbar {
