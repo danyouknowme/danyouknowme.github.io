@@ -8,6 +8,10 @@ export const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
     font-family: 'Nunito', sans-serif;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: ${({ theme }) => theme.background} !important;
     color: ${({ theme }) => theme.text} !important;
