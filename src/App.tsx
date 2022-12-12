@@ -1,16 +1,13 @@
 import { ThemeProvider } from 'styled-components'
-import { Navbar, Scene, Quote, Profile, Content } from './components'
+import { Navbar } from './components'
 import { lightTheme, darkTheme } from './styles/themes'
-import {
-  Article,
-  ContentSection,
-  GlobalStyle,
-  MainSection,
-} from './styles/global'
+import { GlobalStyle, MainSection } from './styles/global'
 import { useThemeMode } from './hooks/useThemeMode'
 import { ThemeContext } from './contexts/ThemeContext'
 import { Fragment, useEffect, useState } from 'react'
 import LoadingScreen from './screens/Loading/Loading'
+import { Route, Routes } from 'react-router-dom'
+import Home from './screens/Home'
 
 export default function App() {
   const { theme, themeToggler } = useThemeMode()
@@ -31,14 +28,21 @@ export default function App() {
         <Fragment>
           <Navbar theme={theme} themeToggler={themeToggler} />
           <MainSection>
-            <Scene />
-            <Article>
-              <ContentSection>
-                <Quote />
-                <Profile isLoading={isLoading} />
-                <Content isLoading={isLoading} />
-              </ContentSection>
-            </Article>
+            <Routes>
+              <Route path='/' element={<Home isLoading={isLoading} />} />
+              <Route
+                path='/works'
+                element={
+                  <div style={{ paddingTop: '100px' }}>In progress...</div>
+                }
+              />
+              <Route
+                path='/experiences'
+                element={
+                  <div style={{ paddingTop: '100px' }}>In progress...</div>
+                }
+              />
+            </Routes>
           </MainSection>
         </Fragment>
       </ThemeProvider>
