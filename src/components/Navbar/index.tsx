@@ -17,6 +17,7 @@ import {
   ChakraProvider,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
+import { Link } from 'react-router-dom'
 
 interface NavbarProps {
   theme: string
@@ -29,17 +30,19 @@ export default function Navbar({ theme, themeToggler }: NavbarProps) {
       <NavbarContainer isScroll={true}>
         <NavbarWrapper>
           <NavbarTitle>
-            <span>dizzy</span>
+            <Link to='/'>
+              <span>dizzy</span>
+            </Link>
             <MenuListContainer>
               <li>
-                <a href='#home'>
+                <Link to='/works'>
                   <span>Works</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href='#home'>
+                <Link to='/experiences'>
                   <span>Experiences</span>
-                </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -65,12 +68,12 @@ export default function Navbar({ theme, themeToggler }: NavbarProps) {
                   variant='outline'
                 />
                 <CustomMenuList theme={theme}>
-                  <a href='#home'>
+                  <Link to='works'>
                     <CustomMenuItem text={'Works'} theme={theme} />
-                  </a>
-                  <a href='#home'>
-                    <CustomMenuItem text={'Experience'} theme={theme} />
-                  </a>
+                  </Link>
+                  <Link to='/experiences'>
+                    <CustomMenuItem text={'Experiences'} theme={theme} />
+                  </Link>
                   <a
                     href='https://github.com/danyouknowme'
                     target={'_blank'}
