@@ -6,7 +6,7 @@ import { useThemeMode } from './hooks/useThemeMode'
 import { ThemeContext } from './contexts/ThemeContext'
 import { Fragment, useEffect, useState } from 'react'
 import LoadingScreen from './screens/Loading/Loading'
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import Home from './screens/Home'
 
 export default function App() {
@@ -42,6 +42,7 @@ export default function App() {
                   <div style={{ paddingTop: '100px' }}>In progress...</div>
                 }
               />
+              <Route path='*' element={<Navigate to='/' />} />
             </Routes>
           </MainSection>
         </Fragment>
