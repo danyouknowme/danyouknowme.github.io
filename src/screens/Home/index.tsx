@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Content, Profile, Quote, Scene } from '../../components'
-import { Article, ContentSection } from './style'
+import { Article, ContentSection } from '../../styles/global'
 
 export default function Home({ isLoading }: { isLoading: boolean }) {
   return (

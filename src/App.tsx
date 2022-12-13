@@ -5,7 +5,7 @@ import { GlobalStyle, MainSection } from './styles/global'
 import { useThemeMode } from './hooks/useThemeMode'
 import { ThemeContext } from './contexts/ThemeContext'
 import { Fragment, useEffect, useState } from 'react'
-import LoadingScreen from './screens/Loading/Loading'
+import LoadingScreen from './screens/Loading'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Home from './screens/Home'
 
