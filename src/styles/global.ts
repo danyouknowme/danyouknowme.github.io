@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled, { createGlobalStyle, DefaultTheme } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
@@ -46,4 +47,12 @@ export const ContentSection = styled.div`
   max-width: 60ch;
   margin: 0 auto;
   padding: 0 24px;
+`
+
+export const ContentWrapper = styled(motion.div)`
+    padding-top: 100px;
+
+  @media (max-width: 767px) {
+    padding-top: 92px;
+  }
 `

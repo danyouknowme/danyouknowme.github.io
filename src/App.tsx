@@ -8,6 +8,8 @@ import { Fragment, useEffect, useState } from 'react'
 import LoadingScreen from './screens/Loading'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Home from './screens/Home'
+import Work from './screens/Work'
+import Experience from './screens/Experience'
 
 export default function App() {
   const { theme, themeToggler } = useThemeMode()
@@ -30,18 +32,8 @@ export default function App() {
           <MainSection>
             <Routes>
               <Route path='/' element={<Home isLoading={isLoading} />} />
-              <Route
-                path='/works'
-                element={
-                  <div style={{ paddingTop: '100px' }}>In progress...</div>
-                }
-              />
-              <Route
-                path='/experiences'
-                element={
-                  <div style={{ paddingTop: '100px' }}>In progress...</div>
-                }
-              />
+              <Route path='/works' element={<Work />} />
+              <Route path='/experiences' element={<Experience />} />
               <Route path='*' element={<Navigate to='/' />} />
             </Routes>
           </MainSection>
