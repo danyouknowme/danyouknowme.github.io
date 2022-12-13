@@ -64,6 +64,15 @@ export const TextContainer = styled.div`
     h3 {
       font-size: 1.3rem;
       font-weight: 500;
+
+      @media (max-width: 768px) {
+        margin-bottom: 0.3rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      margin-bottom: 1.5rem;
     }
   }
     
@@ -72,6 +81,10 @@ export const TextContainer = styled.div`
 
     li {
       font-size: 1.1rem;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0 1rem;
     }
   }
 `
