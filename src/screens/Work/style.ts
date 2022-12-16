@@ -76,12 +76,10 @@ export const ContentSection = styled.div<{ selectedTheme: string }>`
     }
 
     &:first-child {
-      background: green;
       grid-row: 1 / span 2;
     }
 
     &:last-child {
-      background: blue;
       grid-row: 2 / span 2;
       grid-column: 3;
     }
