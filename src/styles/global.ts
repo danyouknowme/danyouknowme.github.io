@@ -32,14 +32,14 @@ export const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
 
 export const MainSection = styled.main`
   display: block;
-  margin: 0 auto;
-  max-width: 768px;
 `
 
 export const Article = styled.article`
   position: relative;
   opacity: 1;
   transform: none;
+  margin: 0 auto;
+  max-width: 768px;
 `
 
 export const ContentSection = styled.div`
@@ -50,7 +50,7 @@ export const ContentSection = styled.div`
 `
 
 export const ContentWrapper = styled(motion.div)`
-    padding-top: 100px;
+  padding-top: 100px;
 
   @media (max-width: 767px) {
     padding-top: 92px;
