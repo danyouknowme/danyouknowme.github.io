@@ -32,7 +32,7 @@ const data = [
     imageSource:
       'https://seeklogo.com/images/A/agoda-logo-8C565D040A-seeklogo.com.png',
     jobs: [
-      'Refactor one of the test framework to execute end-to-end testing in steps',
+      'Optimize one of the test framework to execute end-to-end testing in steps',
       'C# + .NET Core',
       'SQL',
       'June, 2022',
