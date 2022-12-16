@@ -4,7 +4,7 @@ import { Article, ContentSection } from '../../styles/global'
 import { Button } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { ContentContainer, ContentWrapper, ResumeContent } from './style'
-import { IoLogoInstagram } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
 import { MdOutlineEmail } from 'react-icons/md'
 
 const ContentContainerAnimation = {
@@ -75,6 +75,15 @@ export default function Home({ isLoading }: { isLoading: boolean }) {
                 >
                   <Button leftIcon={<MdOutlineEmail />}>
                     thanathip.suw@gmail.com
+                  </Button>
+                </a>
+                <a
+                  href='https://www.linkedin.com/in/thanathip-suwannakhot-0787bb210/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <Button leftIcon={<IoLogoLinkedin />}>
+                    Thanathip Suwannakhot
                   </Button>
                 </a>
                 <a
