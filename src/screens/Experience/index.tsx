@@ -15,18 +15,6 @@ import {
 
 const data = [
   {
-    company: 'awayfromus',
-    position: 'Frontend Developer Part-Time',
-    imageSource: 'https://awayfromus.dev/afu-logo.png',
-    jobs: [
-      'Create game scripts for FiveM which is an online mod of GTA V',
-      'Contributor to the web application that sells the available game scripts',
-      'React + NodeJS + Typescript',
-      'HTML + CSS + Javascript + VueJS',
-      'December, 2021',
-    ],
-  },
-  {
     company: 'agoda',
     position: 'QA Engineer Intern, Frontend Team',
     imageSource:
@@ -36,6 +24,19 @@ const data = [
       'C# + .NET Core',
       'SQL',
       'June, 2022',
+    ],
+  },
+  {
+    company: 'awayfromus',
+    position: 'Frontend Developer Part-Time',
+    imageSource: 'https://awayfromus.dev/afu-logo.png',
+    jobs: [
+      'The organization is not registered as a company',
+      'Create game scripts for FiveM which is an online mod of GTA V',
+      'Contributor to the web application that sells the available game scripts',
+      'React + NodeJS + Typescript',
+      'HTML + CSS + Javascript + VueJS',
+      'December, 2021',
     ],
   },
 ]
