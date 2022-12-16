@@ -32,7 +32,7 @@ export default function App() {
           <MainSection>
             <Routes>
               <Route path='/' element={<Home isLoading={isLoading} />} />
-              <Route path='/works' element={<Work />} />
+              <Route path='/works' element={<Work theme={theme} />} />
               <Route path='/experiences' element={<Experience />} />
               <Route path='*' element={<Navigate to='/' />} />
             </Routes>
