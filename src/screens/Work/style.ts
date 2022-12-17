@@ -1,16 +1,8 @@
 import styled from 'styled-components'
 
 export const WorkArticle = styled.div`
-  max-width: 1260px;
+  width: 100%;
   margin: 0 auto;
-
-  @media (max-width:1024px) {
-    max-width: 768px;
-  }
-
-  @media (max-width:600px) {
-    max-width: 350px;
-  }
 `
 
 export const WorkContentWrapper = styled.div`
