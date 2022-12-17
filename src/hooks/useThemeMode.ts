@@ -11,9 +11,12 @@ export function useThemeMode() {
     theme === 'dark' ? setMode('light') : setMode('dark')
   }
 
-  useEffect(function () {
-    setTheme(theme)
-  }, [theme])
+  useEffect(
+    function () {
+      setTheme(theme)
+    },
+    [theme],
+  )
 
   return { theme, themeToggler }
 }

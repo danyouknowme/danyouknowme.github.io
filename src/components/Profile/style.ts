@@ -6,7 +6,6 @@ export const ProfileContainer = styled.div`
   justify-content: space-between;
   margin: 2rem 0;
 
-  
   @media (max-width: 424px) {
     flex-direction: column-reverse;
     align-items: center;
@@ -46,8 +45,8 @@ export const ProfileImageContainer = styled.div`
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.80);
-  
+  border: 2px solid rgba(255, 255, 255, 0.8);
+
   img {
     width: 100%;
     height: 100%;

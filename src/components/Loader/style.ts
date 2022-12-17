@@ -38,23 +38,23 @@ export const LoaderComponent = styled.svg`
   width: 8em;
   height: 8em;
   animation-duration: 3s;
-	animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 
   .pl__ring {
-    stroke: hsla(223,10%,10%,0.1);
+    stroke: hsla(223, 10%, 10%, 0.1);
     transition: stroke 0.3s;
   }
 
   .pl__worm {
     animation-name: ${worm};
-    animation-timing-function: cubic-bezier(0.42,0.17,0.75,0.83);
+    animation-timing-function: cubic-bezier(0.42, 0.17, 0.75, 0.83);
     animation-duration: 3s;
     animation-iteration-count: infinite;
   }
 
   @media (prefers-color-scheme: dark) {
     .pl__ring {
-      stroke: hsla(233,10%,90%,0.1);
+      stroke: hsla(233, 10%, 90%, 0.1);
     }
   }
 `

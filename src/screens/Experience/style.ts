@@ -13,7 +13,7 @@ export const WorkingContainer = styled(motion.div)`
   .working__title {
     display: flex;
     align-items: center;
-    
+
     h2 {
       font-size: 1.6rem;
       font-weight: 600;
@@ -60,7 +60,7 @@ export const TextContainer = styled.div`
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
-    
+
     h3 {
       font-size: 1.3rem;
       font-weight: 500;
@@ -75,7 +75,7 @@ export const TextContainer = styled.div`
       margin-bottom: 1.5rem;
     }
   }
-    
+
   ul {
     margin: 0 2.5rem;
 

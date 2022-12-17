@@ -30,7 +30,7 @@ export const ContentSection = styled.div<{ selectedTheme: string }>`
       height: 100%;
       z-index: 10;
       opacity: 0;
-      background-color: rgba(0,0,0,0.4);
+      background-color: rgba(0, 0, 0, 0.4);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -39,10 +39,12 @@ export const ContentSection = styled.div<{ selectedTheme: string }>`
         width: 75px;
         height: 75px;
         border-radius: 50%;
-        background-color: ${({ selectedTheme }) => selectedTheme === 'light' ? '#805AD5' : '#ECC94B'};
+        background-color: ${({ selectedTheme }) =>
+          selectedTheme === 'light' ? '#805AD5' : '#ECC94B'};
         font-size: 0.9rem;
         font-weight: 300;
-        color: ${({ selectedTheme }) => selectedTheme === 'light' ? '#FFFFFF' : '#1A202C'};
+        color: ${({ selectedTheme }) =>
+          selectedTheme === 'light' ? '#FFFFFF' : '#1A202C'};
         display: grid;
         place-items: center;
         text-align: center;
@@ -50,7 +52,8 @@ export const ContentSection = styled.div<{ selectedTheme: string }>`
         transition: all 0.2s;
 
         &:hover {
-          background-color: ${({ selectedTheme }) => selectedTheme === 'light' ? '#6B46C1' : '#D69E2E'};
+          background-color: ${({ selectedTheme }) =>
+            selectedTheme === 'light' ? '#6B46C1' : '#D69E2E'};
         }
       }
     }
@@ -90,17 +93,16 @@ export const ContentSection = styled.div<{ selectedTheme: string }>`
     }
   }
 
-  @media (max-width:1024px) {
+  @media (max-width: 1024px) {
     grid-template-rows: repeat(5, 290px);
     grid-template-columns: repeat(2, 1fr);
 
     .card-work__container {
-
       &:first-child {
         background: blue;
         grid-row: 1 / span 2;
       }
-      
+
       &:last-child {
         background: green;
         grid-row: 4 / span 2;
@@ -109,7 +111,7 @@ export const ContentSection = styled.div<{ selectedTheme: string }>`
     }
   }
 
-  @media (max-width:600px) {
+  @media (max-width: 600px) {
     grid-template-rows: repeat(9, 230px);
     grid-template-columns: repeat(1, 1fr);
 

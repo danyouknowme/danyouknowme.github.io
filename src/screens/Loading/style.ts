@@ -23,9 +23,9 @@ export const SplitterScreen = styled(motion.div)`
 `
 
 export const LoaderContainer = styled(motion.div)`
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 `

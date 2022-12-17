@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
     color: inherit;
     text-decoration: none;
   }
-`;
+`
 
 export const MainSection = styled.main`
   display: block;
