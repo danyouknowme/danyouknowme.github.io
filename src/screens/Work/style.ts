@@ -41,7 +41,7 @@ export const ContentSection = styled.div<{ selectedTheme: string }>`
         border-radius: 50%;
         background-color: ${({ selectedTheme }) => selectedTheme === 'light' ? '#805AD5' : '#ECC94B'};
         font-size: 0.9rem;
-        font-weight: bold;
+        font-weight: 300;
         color: ${({ selectedTheme }) => selectedTheme === 'light' ? '#FFFFFF' : '#1A202C'};
         display: grid;
         place-items: center;
