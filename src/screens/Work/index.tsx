@@ -46,7 +46,7 @@ const works = [
   {
     name: 'kurester',
     pictureSource:
-      'https://media.discordapp.net/attachments/1051488364240572416/1053333405259026583/Simulator_Screen_Shot_-_iPhone_14_-_2022-12-16_at_22.27.34.png?width=288&height=623',
+      'https://cdn.discordapp.com/attachments/1051488364240572416/1054037221369458839/Simulator_Screen_Shot_-_iPhone_14_-_2022-12-18_at_21.04.50.png',
     link: 'https://github.com/bounkbu/kurester',
     isPublish: false,
   },
