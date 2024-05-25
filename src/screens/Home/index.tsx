@@ -36,7 +36,7 @@ export default function Home({ isLoading }: { isLoading: boolean }) {
                 <a href='#contact'>@Contact</a>
               </p>
               <ResumeContent>
-                <a href='https://resume.danyouknow.me/'>
+                <a href='https://resume.bizzy.cool/'>
                   <Button rightIcon={<ChevronRightIcon />}>Resume</Button>
                 </a>
               </ResumeContent>

@@ -29,7 +29,8 @@ const data = [
   {
     company: 'awayfromus',
     position: 'Frontend Developer Part-Time',
-    imageSource: 'https://awayfromus.dev/afu-logo.png',
+    imageSource:
+      'https://awayfromus.dev/_next/image?url=%2Fassets%2Fafu_short_logo.png&w=2048&q=75',
     jobs: [
       'The organization is not registered as a company',
       'Create game scripts for FiveM which is an online mod of GTA V',
