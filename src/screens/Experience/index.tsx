@@ -15,6 +15,18 @@ import {
 
 const data = [
   {
+    company: 'INOX',
+    position: 'Software Engineer Intern, Backend',
+    imageSource: 'https://inox.co.th/_nuxt/img/logo.b5fed64.png',
+    jobs: [
+      'Developed Text-to-Speech CMS for the news agency',
+      'Contributed to design and implement payment service for video streaming platform',
+      'React + Zustand + TailwindCSS',
+      'NodeJS + Fastify + MongoDB',
+      'June, 2023',
+    ],
+  },
+  {
     company: 'agoda',
     position: 'QA Engineer Intern, Frontend Team',
     imageSource:
